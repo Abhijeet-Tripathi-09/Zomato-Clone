@@ -1,0 +1,615 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.first {
+    height: 62vh;
+    width: 100%;
+    background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.first .navbar {
+    height: 100px;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first .navbar img {
+    height: 130px;
+    cursor: pointer;
+}
+.first .navbar .navbar-content {
+    height: 30px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first .navbar .navbar-content p {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+.first .navbar .navbar-content p:hover {
+    color: rgb(255, 71, 89);
+}
+.first .main-content {
+    height: 390px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.first .main-content #food-delivery-logo {
+    height: 150px;
+    /* position: absolute; */
+    top: 10%;
+    left: -10%;
+    animation: scoter 7s linear infinite;
+}
+
+.first .main-content p {
+    font-size: 45px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.first .main-content .search-box {
+    height: 60px;
+    width: 800px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.first .main-content .search-box .location {
+    height: 30px;
+    width: 28%;
+    border-right: 2px solid rgb(190, 190, 190);
+    display: flex;
+    align-items: center;
+}
+.first .main-content .search-box .location i {
+    font-size: 20px;
+    color: rgb(255, 123, 136);
+    padding-left: 20px;
+}
+.first .main-content .search-box .location input {
+    width: 180px;
+    font-size: 17px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+}
+.first .main-content .search-box .search {
+    height: 40px;
+    width: 72%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.first .main-content .search-box .search i {
+    font-size: 20px;
+    color: rgb(139, 139, 139);
+    padding-left: 10px;
+}
+.first .main-content .search-box .search input {
+    width: 350px;
+    font-size: 17px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+}
+
+.second {
+    height: 100vh;
+    width: 100%;
+}
+
+.second .second-container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 100px;
+}
+.second .second-container .second-first {
+    height: 250px;
+    width: 380px;
+    border-radius: 15px;
+    border: .5px solid rgba(211, 211, 211, 0.575);
+    transition: .3s;
+    cursor: pointer;
+}
+.second .second-container .second-first:hover {
+    transform: scale(1.05);
+}
+.second .second-container .second-first .first-img {
+    border-radius: 14px 14px 0 0;
+    height: 170px;
+    background-image: url("https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*");
+    background-size: cover;
+    background-position: center;
+}
+.second .second-container .second-first p {
+    font-size: 22px;
+    padding: 10px 15px 0 15px;
+    color: rgb(71, 71, 71);
+}
+.second .second-container .second-first pre {
+    font-size: 16px;
+    padding: 2px 15px;
+    color: gray;
+}
+.second .second-container .second-first .second-img {
+    border-radius: 14px 14px 0 0;
+    height: 170px;
+    background-image: url("https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*");
+    background-size: cover;
+    background-position: center;
+}
+.second .second-container .second-first .third-img {
+    border-radius: 14px 14px 0 0;
+    height: 170px;
+    background-image: url("https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*");
+    background-size: cover;
+    background-position: center;
+}
+
+.second #second {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;   
+}
+.second #second h1 {
+    font-size: 35px;
+    padding: 10px 25px;
+    margin-top: 60px;
+}
+.second #second #para {
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.second #second p span {
+    color: rgb(255, 123, 136);
+    cursor: pointer;
+    transition: .2s;
+}
+.second #second p span:hover {
+    color: rgb(255, 71, 89);
+    text-decoration: underline;
+}
+
+#section {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section-1 {
+    height: 320px;
+    width: 262px;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/132/777/256/vacation-costa-adeje-gran-hotel-best-hotels-of-2017-resort-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    transition: .2s;
+    cursor: pointer;
+}
+.section-1:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: scale(1.05);
+}
+.section-1 p {
+    background-color: rgba(255, 0, 0, 0.568);
+    color: white;
+    font-size: 20px;
+    padding-left: 25px;
+}
+.section-1 pre {
+    font-size: 17px;
+    padding: 6px 0 5px 25px;
+}
+#second #section .img-2 {
+    background-image: url("https://t3.ftcdn.net/jpg/06/39/88/70/360_F_639887058_HCisflmW1CTF4EoNBv2CADRdf0RftNoR.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#second #section .img-3 {
+    background-image: url("https://w0.peakpx.com/wallpaper/235/390/HD-wallpaper-amazing-luxury-luxury-hotel-beach-resort-luxurious-beach-luxurious-hotel-luxury-luxurious.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#second #section .img-4 {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/921/708/937/best-hotels-travel-thailand-tourism-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+#three {
+    max-height: 160vh;
+    width: 100%;
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+#three h1 {
+    padding: 0 150px;
+    margin-bottom: 30px;
+}
+
+#three .places, #three .see-more-places .places {
+    max-height: 500px;
+    width: 1100px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .9rem;
+    margin-bottom: 14px;
+}
+
+#three .places #div {
+    height: 79px;
+    width: 356px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(102, 102, 102, 0.24);
+    border-radius: 5px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#three .places #div:hover {
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 3px 6px, rgba(0, 0, 0, 0.09) 0px 3px 6px;
+    transform: scale(0.95);
+}
+
+#three .places #div #div-1 p {
+    font-size: 18px;
+    color: rgb(85, 85, 85);
+}
+
+#three .places #div #div-1 h3 {
+    font-size: 20px;
+    padding-bottom: 5px;
+    /* font-family: cursive; */
+}
+
+#three .places #div #see-more {
+    display: flex;
+    justify-content: center;
+}
+
+#three .see-more-places {
+    display: none;
+}
+
+.third {
+    min-height: 60vh;
+    width: 100%;
+    background-color: rgba(255, 236, 212, 0.267);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.third img{
+    height: 270px;
+}
+
+#google-img img{
+    height: 40px;
+}
+
+.third #third-content {
+    height: 400px;
+    width: 550px;
+    padding: 10px 60px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.third #third-content pre {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.third #third-content p {
+    margin-bottom: 25px;
+}
+
+.third #third-content #input-radio {
+    height: 20px;
+    width: 1250px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.third #third-content #input-radio div {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.third #third-content #input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.third #third-content #input input {
+    height: 45px;
+    width: 260px; 
+    border-radius: 5px;
+    border: 1px solid rgb(177, 177, 177);
+    outline: 0;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.third #third-content #input button {
+    height: 45px;
+    width: 150px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 1px solid #ef4f5f;
+    background-color: #ef4f5f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.third #third-content #input button:hover {
+    background-color: #d84856;
+    border: 1px solid #d84856;
+}
+
+.third #third-content #input-logos pre{
+    font-size: 15px;
+    color: rgb(155, 155, 155);
+    margin-bottom: 20px;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-container input[type="radio"] {
+    display: none;
+}
+
+.radio-container label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.radio-container label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.radio-container input[type="radio"]:checked + label::before {
+    content: "✔";
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Alternative style */
+.alternative input[type="radio"] + label::before {
+    border-color: #ff0000;
+}
+
+
+/* ---------------------------- Fourth ------------------------ */
+
+.fourth {
+    min-height: 60vh;
+    width: 100%;
+}
+
+/* ---------------faq----------- */
+
+.faq {
+    padding: 10px 12% 50px 12%;
+}
+.faq h2 {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 100px 0 30px 0;
+}
+
+/* --------------- 1st question -------------- */
+
+.content-1 {
+    min-height: 70px;
+    background-color: rgb(255, 255, 255);
+    width: 1100px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+    border: 1px solid rgb(216, 216, 216);
+}
+.content-1:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 0.1s;
+    cursor: pointer;
+}
+.content-1 p {
+    font-size: 22px;
+    margin-left: 20px;
+}
+.content-1 i {
+    font-size: 20px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.accordian-1 .answer-1 p{
+    font-size: 17px;
+    padding: 30px;
+    line-height: 30px;
+    transition: 0.3s;
+}
+.answer-1 {
+    width: 1100px;
+    display: none;
+    transition: 0.3s;
+}
+
+/* --------------------------- Fifth ------------------------ */
+
+.fifth {
+    height: 60vh;
+    width: 100%;
+    background-color: rgba(201, 201, 201, 0.11);
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px 20px 150px;
+}
+
+.fifth .first-line {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fifth .first-line #logo {
+    height: 30px;
+}
+.fifth .first-line .buttons {
+    display: flex;
+}
+.fifth .first-line .buttons button {
+    height: 40px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-right: 20px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    cursor: pointer;
+    background-color: rgba(201, 201, 201, 0.11);
+}
+.fifth .first-line .buttons p {
+    font-size: 16px;
+}
+.fifth .second-line {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+}
+.fifth .second-line div {
+    margin-right: 80px;
+}
+.fifth .second-line div pre {
+    padding: 10px 0px 20px 0;
+    font-weight: 600;
+}
+.fifth .second-line div p {
+    width: 150px;
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    color: rgb(151, 151, 151);
+}
+.fifth .second-line div p span:hover {
+    cursor: pointer;
+    color: #d84856;
+}
+.fifth .fifth-row .icons{
+    display: flex;
+    margin-bottom: 10px;
+}
+.fifth .fifth-row .icons i{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(18, 18, 77);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.fifth .fifth-row div img {
+    height: 20px;
+}
+.fifth .fifth-row #install-option {
+    display: flex;
+    flex-direction: column;
+}
+.fifth .fifth-row #install-option img {
+    height: 40px;
+    width: 130px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+hr {
+    margin: 50px 0 20px 0;
+}
+#last-content {
+    width: 99%;
+    font-size: 14px;
+    color: rgb(139, 139, 139);
+}
